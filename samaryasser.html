@@ -1,0 +1,159 @@
+<html>
+  <head>
+    <title>My website</title>
+  </head>
+  <style type="text/css">
+    * {
+      margin: 0;
+      padding: 0;
+
+      font-family: sans-serif;
+    }
+    .headcontainer {
+      width: 100%;
+      height: 15vh; 
+    }
+    .header {
+      padding: 20px 0; 
+      width: 1200px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      font-size: 35px;
+      cursor: pointer;
+    }
+    .header nav ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+    }
+    .header nav ul li {
+      margin-top: 10px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 20px;
+      padding: 0 10px 0 20px;
+    }
+    .header nav ul li:hover {
+      color: #6c63ff;
+    }
+    .btn {
+      width: 150px;
+      height: 45px;
+      font-weight: bold;
+      font-size: 15px;
+      border: none;
+      background-color: #6c63ff;
+      color: #fff;
+      border-radius: 30px;
+      cursor: pointer;
+    }
+    .container {
+      width: 1200px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      background-image: url(delivery3.jpg);
+      background-repeat: no-repeat;
+      background-size: 50% 100%; 
+      height: 85vh; 
+      background-position: right center; 
+    }
+    .container h1 {
+      width: 50%;
+      font-size: 50px;
+      color: #222;
+      margin-top: 30px;
+      margin-left: 0.5px;
+    }
+    .container p {
+      width: 50%;
+      line-height: 30px;
+      font-size: 20px;
+      color: #444;
+      margin-top: 60px;
+    }
+    .container .btn {
+      margin-top: 50px;
+      width: 200px;
+      height: 50px;
+      font-size: 20px;
+      background-color: #6c63ff;
+    }
+    
+  </style>
+  <body>
+    <div class="headcontainer">
+      <div class="header">
+        <h2 class="logo">Doorhub</h2>
+        <nav>
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Service</li>
+            <li>Blog</li>
+            <li>Privacy</li>
+          </ul>
+        </nav>
+        <button id="contactBtn" class="btn">Contact me</button>
+      </div> 
+      </div>
+      <div class="container">
+        <div class="content">
+          <h1>We provide delivery within 30 Min</h1>
+          <p>
+            Our advanced technology makes it possible to offer cost-effective
+            and fast delivery. Throughout new thinking of last mile
+            transportation, we create the preconditions to bring e-commerce in
+            front of a highly competitive market. We combine deliveries and
+            route optimize so you can offer your customers the fastest delivery
+            in the market. Doorhubs solution fits any size of business.
+          </p>
+          <p id="moreInfo"> 
+
+          </p>
+          <button id="button" class="btn">Know more...</button>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <p>
+      <br>
+      <br>
+    <img src="delivery.png" alt="opps" width="260" height="300">
+    <img src="delivery1.png" alt="opps" width="260" height="300">
+    <img src="delivery2.jpg" alt="opps" width="260" height="300">
+    <img src="delivery4.jpg" alt="opps" width="260" height="300">
+    <img src="delivery5.jpg" alt="opps" width="260" height="300">
+    <div class="samar">
+      <h1 style="font-size: 45px;">Track orders to your door</h1>
+      <br>
+      <br>
+      <p style="font-size: 20px;">Get your favourite food delivered in a flash.
+         You’ll see when your rider’s picked up your order,
+          and be able to follow them along the way.
+         You’ll get a notification when they’re nearby, too.</p>
+         <br>
+         <br>
+    </div>
+
+    <script>
+      var knowmorebutton = document.getElementById("button"),
+      moreInfo = document.getElementById("moreInfo");
+      knowmorebutton.onclick=function() {
+       moreInfo.innerHTML = "Read more about how Doorhub started , and what our mission is , and how we want to create changes";
+      }
+
+  var contactbutton = document.getElementById("contactBtn"),
+      contactInfo = document.getElementById("contactInfo");
+      contactBtn.onclick=function() {
+       alert("Contact us via facebook or WhatsApp");
+      }
+    </script>
+  </body>
+</html>
